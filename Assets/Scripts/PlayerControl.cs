@@ -12,14 +12,12 @@ public class PlayerControl : MonoBehaviour
     public Text scoreText;
     public GameObject gameOverText;
 
-    // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1;
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetMouseButtonDown(0) || Input.touchCount > 0)
