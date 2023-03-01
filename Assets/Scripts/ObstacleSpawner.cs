@@ -8,7 +8,6 @@ public class ObstacleSpawner : MonoBehaviour
     public GameObject obstacleObj;
     public float height;
 
-    // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("Spawn", 0.0f, spawnTime);
@@ -22,9 +21,4 @@ public class ObstacleSpawner : MonoBehaviour
         Destroy(obj,15);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
